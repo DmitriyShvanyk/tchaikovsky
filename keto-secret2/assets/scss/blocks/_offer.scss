@@ -1,0 +1,32 @@
+.offer {
+    background-color: #ECF4FB;
+    box-shadow: 0px 23px 36.48px 1.52px rgba(0, 0, 0, 0.09);
+
+    &__container {
+        padding-top: 44px;
+        padding-bottom: 105px;
+    }
+
+    @media (min-width:768px) {
+        &__title {
+            font-size: 40px;
+            margin-bottom: 65px;
+        }
+    }
+
+    @media (max-width:767px) {
+        &__container {
+            padding-bottom: 85px;
+        }
+
+        &__title {
+            margin-bottom: 25px;
+        }
+    }
+
+    @media (max-width:576px) {
+        &__container {
+            padding-bottom: 60px;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.program {
+    position: relative;
+    background: url(../img/line-decor.svg) no-repeat center bottom;
+    background-size: 100% auto;
+
+    &__container {
+        padding-bottom: 1px;
+        padding-top: 25px;
+    }
+
+    &__title {
+        margin-bottom: 0;
+    }
+
+    &__head {
+        margin-bottom: 55px;
+    }
+
+    &__body {
+        margin-bottom: 10px;
+    }
+
+    &__columns {
+        display: flex;
+        padding-bottom: 46px;
+    }
+
+    &__columns+&__columns {
+        padding-top: 53px;
+        border-top: 1px solid #EBEBEB;
+    }
+
+    &__column {
+        max-width: 50%;
+        width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &__content {
+        font-size: 20px;
+        line-height: 1.4;
+        position: relative;
+    }
+
+    &__day {
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #555;
+        font-weight: 600;
+        margin: 0 0 25px;
+    }
+
+    @media (min-width: 768px) {
+        &__content {
+            left: -15px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__container {
+            padding-top: 88px;
+            padding-bottom: 1px;
+        }
+
+        &__body {
+            margin-bottom: -4px;
+        }
+
+        &__content {
+            left: 0;
+            font-size: 18px;
+        }
+
+        &__columns {
+            flex-wrap: wrap;
+        }
+    
+        &__columns+&__columns {
+            padding-top: 43px;
+        }
+    
+        &__column {
+            max-width: 100%;
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &__head {
+            margin-bottom: 32px;
+        }
+
+        &__day {
+            margin-bottom: 12px;
+        }
+    }
+
+}

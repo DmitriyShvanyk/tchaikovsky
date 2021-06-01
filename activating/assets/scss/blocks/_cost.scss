@@ -1,0 +1,143 @@
+.cost {
+    background: #FAFAFA url(../img/line-decor-2.svg) no-repeat center bottom 50px;
+    background-size: 100% auto;
+
+    &__container {
+        padding-top: 87px;
+        padding-bottom: 97px;
+    }
+
+    &__title {
+        margin-bottom: 54px;
+    }
+
+    &__content {
+        text-align: left;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    &__subtitle {
+        font-size: 30px;
+        line-height: 1.4;
+        margin-top: 0;
+        font-family: $fontTitle;
+    }
+
+    &__lead {
+        margin-bottom: 46px;
+    }
+
+    &__included {
+        font-family: $fontTitle;
+        margin-bottom: 21px;
+    }
+
+    &__price {
+        background-color: #FFE376;
+        display: inline-block;
+        vertical-align: baseline;
+        padding: 0 7px;
+        border-radius: 4px;
+    }
+
+    &__columns {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -20px;
+        margin-right: -20px;
+        text-align: center;
+    }
+
+    &__column {
+        max-width: 50%;
+        width: 50%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &__box {
+        padding: 31px 50px 49px;
+        background-color: $white;
+        border: 1px solid #F0F0F0;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 40px rgba($black, .15);
+        border-radius: 12px;
+        margin-top: 4px;
+    }
+
+    &__box-title {
+        margin: 0;
+        margin-bottom: 14px;
+        font-size: 30px;
+        line-height: 1.2;
+        text-align: center;
+        color: $black;
+    }
+
+    &__box-foot {
+        font-size: 14px;
+        line-height: 1.3;
+        text-align: center;
+        color: #C4C4C4;
+        margin-top: -20px;
+    }
+
+    &__list{
+        column-count: 2;
+    }
+
+    @media (max-width: 767px){
+        &__container {
+            padding-top: 60px;
+            padding-bottom: 81px;
+        }
+
+        &__title {
+            margin-bottom: 18px;
+        }
+
+        &__column {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        &__content {
+            font-size: 18px;
+            line-height: 1.2;
+        }
+    
+        &__subtitle {
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+
+        &__lead {
+            margin-bottom: 28px;
+        }
+    
+        &__included {
+            margin-bottom: 21px;
+        }
+
+        &__list{
+            column-count: 1;
+        }
+
+        &__box {
+            padding: 33px 16px 43px;
+            margin-top: 32px;
+        }
+    
+        &__box-title {
+            margin-bottom: 14px;
+            font-size: 24px;
+        }
+    
+        &__box-foot {
+            font-size: 12px;
+            line-height: 1.2;
+            margin-top: -25px;
+        }
+    }
+}

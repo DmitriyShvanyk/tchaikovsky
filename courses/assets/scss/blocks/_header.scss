@@ -1,0 +1,121 @@
+.header {
+  min-height: 600px;
+  background: #555 url(../img/header/header.jpg) no-repeat center top;
+  background-size: auto 100%;
+  color: $white;
+  position: relative;
+
+  &__container {
+    padding-top: 28px;
+    padding-bottom: 81px;
+    position: relative;
+  }
+
+  &__title {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 22px;
+  }
+
+  &__title-span {
+    display: block;
+    font-weight: 500;
+    margin-top: 1px;
+    letter-spacing: -1.8px;
+  }
+
+  &__lead {
+    margin-bottom: 36px;
+    max-width: 520px;
+    color: $white;
+  }
+
+  @media (min-width: 1440px) {
+    & {
+      max-width: 1440px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 100%;
+      width: 100vw;
+      height: 100%;
+      background: url(../img/header/header-left.jpg) repeat-x 0 0;
+    }
+
+    &::after {
+      right: auto;
+      left: 100%;
+      background: url(../img/header/header-right.jpg) repeat-x 0 0;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__title {
+      font-size: 65px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__title {
+      font-size: 60px;
+    }
+  }
+
+  @media (width: 768px) {
+    & {
+      background-position: center right -270px;
+      background-size: cover;
+    }
+
+    &__title {
+      font-size: 50px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    & {
+      min-height: 505px;
+      background: #555 url(../img/header/header-mb.jpg) no-repeat center top;
+      background-size: cover;
+    }
+
+    &__container {
+      padding-top: 35px;
+      padding-bottom: 1px;
+    }
+
+    &__title {
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+
+  }
+
+  @media (max-width: 576px) {
+    &__title {
+      font-size: 8vw;
+      max-width: 240px;
+      line-height: 1.2;
+    }
+
+    &__title-span {
+      font-size: 8vw;      
+    }
+
+    &__lead {
+      margin-bottom: 30px;
+      max-width: 220px;
+      color: rgba($white, .8);
+      margin-bottom: 40px;
+    }
+  }
+}

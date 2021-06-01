@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Futura PT Demi';
+  src: url('#{$pathAssets}fonts/FuturaPT-Demi.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura PT Book';
+  src: url('#{$pathAssets}fonts/FuturaPT-Book.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

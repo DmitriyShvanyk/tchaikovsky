@@ -1,0 +1,21 @@
+.program {
+    &__container {
+        padding-bottom: 27px;
+        padding-bottom: 27px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__day {
+        margin-bottom: 5px;
+        color: rgba(37, 35, 42, 0.5);
+        opacity: 0.9;
+    }
+    
+    &__lead{
+        margin-top: 38px;
+        font-weight: 400;
+    }
+}

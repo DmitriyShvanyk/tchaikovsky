@@ -1,0 +1,61 @@
+.form {
+    font-weight: 500;
+    padding: 29px 25px 50px;
+    width: 100%;
+    background-color: $white;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+    box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    position: relative;
+
+    &__subtitle{
+        margin-bottom: 22px;
+    }
+
+    &__item + &__item {
+        margin-top: 22px;
+    }
+
+    &__control {
+        font-weight: 500;
+        color: #2E3238;
+        display: block;
+        width: 100%;
+        height: 60px;
+        padding: 5px 26px;
+        border: 2px solid rgba(37, 35, 42, 0.1);
+        border-radius: 12px;
+        text-align: center;
+
+        &::placeholder {
+            color: #2E3238;
+            opacity: .4;
+        }
+
+        &:focus {
+            border-color: $blue;
+        }
+    }
+
+    &__submit {
+        outline: none;
+        width: 100%;
+        padding-left: 26px;
+        padding-right: 26px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        margin-top: 19px;
+    }
+
+    &__submit-span {
+        font-weight: 500;
+        color: rgba($white, .5);
+        font-style: italic;
+        margin-left: 5px;
+    }
+
+    &__submit-icon {
+        margin-left: auto;
+    }  
+}

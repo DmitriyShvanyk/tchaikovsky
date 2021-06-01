@@ -1,0 +1,31 @@
+.title {
+    font-size: 52px;
+    line-height: .9;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: $dark;
+
+    &__span{
+        display: block;
+    }
+
+    &__selected {
+        position: relative;
+        display: inline-flex;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 58%;
+            left: 50%;
+            width: calc(100% + 24px);
+            height: 56px;
+            background-color: #FFEDF8;
+            border-radius: 44px;
+            transform: rotate(-0.96deg) translate(-50%, -50%);
+            z-index: -1;
+        }
+    }
+}

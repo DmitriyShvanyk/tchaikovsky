@@ -1,0 +1,23 @@
+.about {
+    &__container {
+        padding-bottom: 24px;
+    }
+
+    &__author{
+        margin-bottom: 13px;
+    }
+
+    &__title {
+        margin-bottom: 26px;
+    }    
+
+    &__gallery{
+        width: calc(100% + 40px);
+        margin-left: -20px;
+    }
+
+    &__gallery + p{
+        margin-top: 13px;
+    }
+
+}

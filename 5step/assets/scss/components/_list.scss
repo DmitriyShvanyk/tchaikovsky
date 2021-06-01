@@ -1,0 +1,31 @@
+.list {
+    padding-left: 0;
+    margin-top: 0;
+    list-style: none;
+
+    &__item {
+        margin-bottom: 10px;
+        padding-left: 34px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background: url(../img/check.svg) no-repeat 0 0;
+            background-size: 24px 24px;
+        }
+    }
+
+    &--error{
+        .list__item{
+            &::before {
+                background: url(../img/error.svg) no-repeat 0 0;
+                background-size: 24px 24px;
+            }
+        }
+    }
+}

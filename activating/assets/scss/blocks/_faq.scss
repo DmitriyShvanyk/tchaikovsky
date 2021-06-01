@@ -1,0 +1,30 @@
+.faq {
+    &__container {
+        padding-top: 90px;
+        padding-bottom: 84px;
+    }
+
+    &__title {
+        margin-bottom: 22px;
+        color: $black;
+    }
+
+    &__body + &__foot {
+        margin-top: 47px;
+    }
+
+    @media (max-width: 767px) {
+        &__container {
+            padding-top: 56px;
+        }
+
+
+        &__title {
+            margin-bottom: 17px;
+        }
+
+        &__body + &__foot {
+            margin-top: 37px;
+        }
+    }
+}

@@ -1,0 +1,192 @@
+.packs {
+    &__columns {
+        display: flex;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    &__column {
+        display: flex;
+        max-width: 50%;
+        width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @media (max-width:767px) {
+        &__columns {
+            display: block;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        &__column {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+
+            &+& {
+                margin-top: 33px;
+            }
+        }
+    }
+}
+
+
+
+
+.pack {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 15px;
+    background-color: $white;
+    border: 1px solid rgba($black, .05);
+    box-shadow: 0px 20px 40px rgba($black, .1);
+    border-radius: 20px;
+
+    &__head {
+        padding: 11px 65px 13px;
+    }
+
+    &__title {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        line-height: 1.4;
+        font-family: $fontTitle;
+    }
+
+    &__title-icon {
+        margin-left: 12px;
+        position: relative;
+        top: 2px;
+    }
+
+    &__body {
+        padding: 21px 65px 1px;
+    }
+
+    &__head+&__body {
+        border-top: 1px solid $gray2;
+    }
+
+    &__list {
+        margin-left: -20px;
+    }
+
+    &__foot {
+        padding: 0px 65px 76px;
+        margin-top: auto;
+    }
+
+    &__access {
+        margin-bottom: 52px;
+    }
+
+    &__price {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 58px;
+    }
+
+    &__price-old,
+    &__price-now {
+        font-size: 36px;
+        line-height: 1.4;
+    }
+
+    &__price-right {
+        text-align: right;
+    }
+
+    &__price-date {
+        display: block;
+        line-height: .6;
+    }
+
+    &__btns {
+        width: calc(100% + 20px);
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    &__btn {
+        width: 100%;
+        display: block;
+    }
+
+    @media (max-width:991px) {
+
+        &__head,
+        &__body,
+        &__foot {
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+
+        &__list {
+            margin-left: -15px;
+        }
+    }
+
+    @media (max-width:767px) {
+        &{
+            display: block;
+        }
+
+        &__head {
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
+
+        &__title {
+            font-size: 26px;
+        }
+
+        &__title-icon {
+            width: 15px;
+            height: 15px;
+            margin-left: 10px;
+        }
+
+        &__price {
+            margin-bottom: 36px;
+        }
+
+        &__access {
+            margin-bottom: 22px;
+        }
+
+        &__price-old,
+        &__price-now {
+            font-size: 26px;
+        }
+
+        &__price-date {
+            font-size: 16px;
+            line-height: 1.45;
+        }
+
+        &__foot {
+            padding-bottom: 55px;
+        }
+    }
+}
+
+
+.pack--mentor {
+    .btn--outline {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    @media (max-width:767px) {
+        .btn--outline {
+            display: none;
+        }
+    }
+}

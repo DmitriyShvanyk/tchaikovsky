@@ -1,0 +1,57 @@
+.magic {
+    &__container {
+        padding-bottom: 100px;
+    }
+
+    &__box {
+        margin: 0px auto;
+        max-width: 970px;
+        text-align: center;
+    }
+
+    &__title{
+        color: #3D2668;
+        margin-bottom: 20px;
+        font-size: 48px;
+    }
+
+    &__caption{
+        font-size: 24px;
+        margin-bottom: 75px;
+    }
+
+    @media (max-width:991px){
+        &__content{
+            margin-bottom: 40px;
+        }
+    }
+
+    @media (max-width:767px){
+        &{
+            background-color: $white;
+        }
+
+        &__container {
+            padding-bottom: 85px;
+        }
+
+        &__title {
+            margin-bottom: 24px;
+            font-size: 43px;
+        } 
+        
+        &__caption{
+            margin-bottom: 55px;
+        }
+    }
+
+    @media (max-width:767px){
+        &__title {
+            font-size: 10.5vw;
+        }    
+        
+        &__caption{
+            margin-bottom: 25px;
+        }
+    }
+}

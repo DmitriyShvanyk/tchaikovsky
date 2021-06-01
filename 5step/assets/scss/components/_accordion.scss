@@ -1,0 +1,89 @@
+.accordion {
+    &__item{
+        position: relative;
+    }
+    
+    &__item+&__item {
+        margin-top: 30px;
+    }
+
+    &__head {
+        color: #738AFF;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        display: block;
+        position: relative;
+        padding-right: 32px;
+        cursor: pointer;
+        font-family: $fontDefaultTitle;
+    }
+
+    &__icon{
+        position: absolute; top: 0; right: 0;
+        width: 32px;
+        height: 32px;
+        background: rgba(115, 138, 255, 0.06);
+        border-radius: 20px;
+        transform: rotate(45deg); 
+        transition: transform 0.3s cubic-bezier(0, 1, 0, 1);    
+
+        &::before{
+            content: '';       
+            position: absolute; top: calc(50% - 2px); left: calc(50% - 2px);     
+            width: 10px;
+            height: 10px;
+            border: 2px solid #738AFF;
+            border-top: none;
+            border-left: none;   
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__content {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+        color: $dark90;
+    }
+
+    &__control:checked+&__head {
+        color: $dark;
+    }
+
+    &__control:checked+&__head &__icon{
+        background-color: transparent;
+        transform: rotate(-135deg);
+
+        &::before{
+            border-color: #D7D7D7;            
+        }
+    }
+
+    &__control:checked~&__content {
+        max-height: 1000px;
+        transition: max-height 1s ease-in-out;
+    }  
+
+    &__list{
+        padding-left: 0;
+        list-style: none;
+        margin: 15px 0 0;
+    }
+
+    &__list-item{
+        padding-left: 22px;
+        position: relative;
+        margin-bottom: 12px;
+
+        &::before{
+            content: '';
+            position: absolute; top: 6px; left: 0;
+            width: 10px;
+            height: 10px;
+            background-color: #FFD686;
+            border-radius: 50%;
+        }
+    }
+}

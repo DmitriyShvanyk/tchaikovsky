@@ -1,0 +1,62 @@
+.reviews {
+    background-color: $white;
+
+    &__container {
+        max-width: 1280px;
+        padding-top: 81px;
+        padding-bottom: 112px;
+    }
+
+    &__title {
+        margin-bottom: 83px;
+        color: $black;
+    }
+
+    &__inner {
+        color: $white;
+        position: relative;
+    }
+
+    &__columns {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__column {
+        max-width: 33.333%;
+        width: 33.333%;
+    }
+
+    &__pict {
+        margin-top: 50px;
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    @media (max-width:1200px) {
+        &__container {
+            padding-top: 60px;
+        }
+
+        &__title {
+            margin-bottom: 25px;
+        }
+    }
+
+    @media (max-width:1024px) {
+        &__container {
+            padding-top: 50px;
+            padding-bottom: 85px;
+        }
+        
+    }
+
+    @media (max-width:767px) {
+        &__container {
+            padding-top: 50px;
+        }
+    }
+}

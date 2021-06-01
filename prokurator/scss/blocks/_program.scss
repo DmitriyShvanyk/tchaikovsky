@@ -1,0 +1,252 @@
+.program {
+    position: relative;
+
+    &__container {
+        position: relative;
+        padding-bottom: 1px;
+        z-index: 9;
+    }
+
+    &__items {
+        margin-bottom: 40px;
+    }
+
+    &__item {
+        border-bottom: 1px solid $gray3;
+    }
+
+    &__head {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 50px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+
+    &__subtitle,
+    &__subtitle-2 {
+        line-height: 1.1;
+        font-family: $fontTitle;
+    }
+
+    &__subtitle {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    &__subtitle-2 {
+        margin: 0 0 21px;
+        font-size: 20px;
+    }
+
+    &__block {
+        border-top: 1px dashed $gray3;
+        padding-top: 34px;
+        padding-bottom: 36px;
+    }
+
+    &__columns {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -20px;
+    }
+
+    &__column {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+
+        &:nth-child(1) {
+            max-width: 600px;
+        }
+
+        &:nth-child(2) {
+            max-width: 515px;
+
+        }
+    }
+
+    &__result {
+        padding: 30px;
+        background-color: $lightblue2;
+        border-radius: 20px;
+
+        p {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__leading {
+        margin-top: 35px;
+    }
+
+    &__note {
+        color: $gray;
+        margin-top: -4px;
+        margin-bottom: 25px;
+    }
+
+    &__alerts {
+        display: flex;
+        align-items: center;
+        max-width: 695px;
+        margin-left: -25px;
+        margin-bottom: 15px;
+    }
+
+    &__alert {
+        font-family: $fontTitle;
+        background: rgba(239, 202, 151, 0.1);
+        border-radius: 10px;
+        padding: 10px 25px 15px;
+    }
+
+    &__or {
+        margin: 0 20px;
+    }
+
+    &__alert,
+    &__or {
+        margin-bottom: 10px;
+    }
+
+    &__circle,
+    &__circle-2,
+    &__circle-3,
+    &__circle-4 {
+        position: absolute;
+        border-radius: 50%;
+        pointer-events: none;
+    }
+
+    &__circle,
+    &__circle-2 {
+        width: 582px;
+        height: 582px;
+    }
+
+    &__circle {
+        right: -335px;
+        top: 36.7%;
+        background-color: #FBF2F9;
+        z-index: 1;
+    }
+
+    &__circle-2 {
+        right: -320px;
+        top: 37%;
+        border: 1px solid #EEEEF0;
+    }
+
+    &__circle-3,
+    &__circle-4 {
+        width: 225px;
+        height: 225px;
+    }
+
+    &__circle-3 {
+        left: -168px;
+        top: 71.5%;
+        background-color: #EFCA97;
+        z-index: 1;
+    }
+
+    &__circle-4 {
+        left: -159px;
+        top: 71.35%;
+        border: 1px solid #E9E9E9;
+    }
+
+    @media (min-width:577px) {
+        &__btn {
+            min-width: 350px;
+        }
+    }
+
+    @media (max-width:767px) {
+        &__items {
+            margin-bottom: 34px;
+        }
+
+        &__block {
+            padding-bottom: 38px;
+        }
+
+        &__subtitle {
+            font-size: 22px;
+            line-height: 1.2;
+        }
+
+        &__head {
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
+
+        &__columns {
+            display: block;
+            margin: 0;
+        }
+
+        &__column {
+            padding-left: 0;
+            padding-right: 0;
+
+            &:nth-child(1),
+            &:nth-child(2) {
+                max-width: 100%;
+            }
+        }
+
+        &__content {
+            margin-bottom: 37px;
+        }
+
+        &__result {
+            p {
+                margin-bottom: 15px;
+            }
+        }
+
+        &__leading {
+            margin-top: 50px;
+        }
+
+        &__circle,
+        &__circle-2,
+        &__circle-3,
+        &__circle-4 {
+            display: none;
+        }
+
+
+        &__note {
+            font-size: 16px;
+            margin-top: -12px;
+            margin-bottom: 18px;
+        }
+    
+        &__alerts {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 0;
+            margin-bottom: 15px;
+        }
+    
+        &__or {
+            margin-left: 0;
+            margin-right: 0;
+        }    
+
+    }
+
+}

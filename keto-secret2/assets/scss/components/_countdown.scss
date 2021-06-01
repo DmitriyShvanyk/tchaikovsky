@@ -1,0 +1,106 @@
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-bottom: 22px;
+
+        >div {
+            font-family: 'Roboto Condensed', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 95px;
+            width: 70px;
+            font-size: 80px;
+            font-weight: 700;
+            color: $white;
+            background: linear-gradient(to bottom, #3696D2, #68C5E8);
+            border: 1px solid #1A658F;
+            border-radius: 3px;
+            margin-left: 6px;
+            margin-right: 6px;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                height: 2px;
+                width: 100%;
+                background-color: #2373A2;
+                margin-top: -1px;
+            }
+        }
+    }
+
+    &__dots {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 80px;
+        font-weight: 700;
+        color: #3899D7;
+        margin-top: -22px;
+    }
+
+    &__caption {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        color: rgb(24, 36, 76);
+        font-size: 36px;
+    }
+
+    @media (max-width:767px) {
+        &__item {
+            padding-bottom: 10px;
+
+            >div {
+                height: 65px;
+                width: 50px;
+                font-size: 60px;
+                margin-left: 3px;
+                margin-right: 3px;
+            }
+        }
+
+        &__dots {
+            font-size: 60px;
+            margin-top: -10px;
+        }
+
+        &__caption {
+            font-size: 26px;
+        }
+    }
+
+    @media (max-width:576px) {
+        &__item {
+            padding-bottom: 5px;
+
+            >div {
+                height: 55px;
+                width: 35px;
+                font-size: 50px;
+                margin-left: 1px;
+                margin-right: 1px;
+            }
+        }
+
+        &__dots {
+            font-size: 30px;
+            margin-top: -5px;
+        }
+
+        &__caption {
+            font-size: 18px;
+        }
+    }
+}

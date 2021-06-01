@@ -1,0 +1,162 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba($black, 0);
+}
+
+body {
+  color: $black;
+  text-align: left;
+  font-family: $fontDefault;
+  font-size: $fontSizeDefault;
+  line-height: $lineHeightDefault;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  @media (max-width:1024px) {}
+
+  @media (max-width:767px) {}
+}
+
+
+
+
+input,
+select,
+button,
+textarea {
+  font-family: $fontDefault;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+  transition: color .3s ease;
+}
+
+a:hover {
+  color: rgba($blue, .8);
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  color: rgba($blue, .8);
+  text-decoration: underline;
+}
+
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+
+
+/* sr-only */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
+
+
+
+
+/* main */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+
+
+
+
+
+/* lazyload */
+
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+
+
+
+
+.text-gray {
+  color: $gray;
+}
+
+
+
+.fw-700 {
+  font-family: $fontTitle;
+}
+
+.w-100 {
+  width: 100%;
+}

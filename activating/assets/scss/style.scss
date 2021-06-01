@@ -1,0 +1,45 @@
+@charset 'utf-8';
+
+/* ==================== PLUGINS ==================== */
+
+@import url('./../vendor/fancybox/jquery.fancybox.min.css');
+
+
+/* ==================== ABSTRACTS ==================== */
+
+@import 'abstracts/variable';
+@import 'abstracts/mixin';
+
+
+/* ==================== BASE ==================== */
+
+@import 'base/normalize';
+@import 'base/fonts';
+@import 'base/basic';
+
+
+/* ==================== COMPONENTS ==================== */
+
+@import 'components/root';
+@import 'components/container';
+@import 'components/title';
+@import 'components/list';
+@import 'components/btn';
+@import 'components/form';
+@import 'components/accordion';
+@import 'components/modal';
+@import 'components/social';
+
+
+/* ==================== BLOCKS ==================== */
+
+@import 'blocks/header';
+@import 'blocks/mylife';
+@import 'blocks/about';
+@import 'blocks/review';
+@import 'blocks/program';
+@import 'blocks/result';
+@import 'blocks/intensive';
+@import 'blocks/cost';
+@import 'blocks/faq';
+@import 'blocks/footer';

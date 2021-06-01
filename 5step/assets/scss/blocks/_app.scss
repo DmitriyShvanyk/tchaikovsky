@@ -1,0 +1,14 @@
+.app {
+    &__container {
+        padding-top: 10px;
+        padding-bottom: 15px;
+        position: relative;
+    }
+
+    &__heart {
+        position: absolute;
+        top: 5%;
+        right: 12px;
+        max-height: 90px;
+    }
+}

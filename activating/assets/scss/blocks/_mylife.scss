@@ -1,0 +1,227 @@
+.mylife {
+    background-color: #FAFAFA;
+
+    &__container {
+        padding-top: 98px;
+        padding-bottom: 78px;
+    }
+
+    &__title {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__label {
+        display: inline-block;
+        vertical-align: top;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 1.2;
+        padding: 5px 22px;
+        background-color: #FBF1E6;
+        border-radius: 50px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__head {
+        margin-bottom: 16px;
+        position: relative;
+    }
+
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__block {
+        margin-bottom: 48px;
+    }
+
+    &__block--reverse &__body {
+        flex-direction: row-reverse;
+    }
+
+    &__column {
+        max-width: 50%;
+        width: 50%;
+    }
+
+    &__pict {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    &__content {
+        padding-left: 15px;
+        max-width: 470px;
+        font-size: 20px;
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        line-height: 1.4;
+        margin: 0 0 13px;
+        font-family: $fontTitle;
+        letter-spacing: .02em;
+    }
+
+    &__para {
+        margin: 0 0 12px;
+    }
+
+
+    &__pict--1 {
+        top: 32px;
+        left: 38px;
+    }
+
+    &__pict--2 {
+        top: 18px;
+        left: -112px;
+    }
+
+    &__pict--3 {
+        top: 8px;
+        left: -15px;
+    }
+
+    &__pict--4 {
+        top: -28px;
+        left: -45px;
+    }
+
+
+    &__block--2 {
+        margin-bottom: 56px;
+    }
+
+    &__block--2 &__content,
+    &__block--4 &__content {
+        padding-left: 95px;
+        max-width: 540px;
+    }
+
+    &__block--3 &__head {
+        margin-bottom: 30px;
+    }
+
+    &__line {
+        position: absolute;
+        top: calc(50% + 25px);
+        left: 50%;
+        min-width: 100vw;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+    }
+
+    @media (max-width: 1200px){
+        &__pict--2 {
+            left: -20px;
+        }
+    }
+
+    @media (max-width: 991px){
+        &__block--4 &__content {
+            padding-left: 0;
+            max-width: 300px;
+        }
+    }
+
+    @media (max-width:767px) {
+        &__container {
+          padding-top: 46px;
+          padding-bottom: 57px;
+        }
+
+        &__title {
+            margin-bottom: 33px;
+        }
+
+        &__label {
+            font-size: 20px;
+            padding: 2px 17px;
+            margin-bottom: 38px;
+        }
+
+        &__column {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        &__pict{
+            left: 0;
+            top: 0;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        &__pict--1{
+            max-height: 197px;        
+            left: 2%;    
+        }
+
+        &__pict--2{
+            max-height: 212px;        
+            left: 0;    
+        }
+
+        &__pict--3{
+            max-height: 174px;        
+            left: 0;   
+            margin-bottom: 12px; 
+        }
+
+        &__pict--4{
+            max-height: 165px;        
+            left: 0;   
+            margin-bottom: 27px; 
+        }
+
+        &__content,
+        &__block--2 &__content,
+        &__block--4 &__content,
+        &__subtitle{
+            font-size: 18px;
+        }
+
+        &__content,
+        &__block--2 &__content,
+        &__block--4 &__content {
+            padding-left: 0;
+            max-width: 100%;            
+            line-height: 1.3;
+        }
+
+        &__subtitle {
+            line-height: 1.2;
+            margin: 0 0 8px;
+        }
+
+        &__block--3 {
+            margin-bottom: 34px; 
+        }
+
+        &__block--3 &__head {
+            margin-bottom: 0;
+        }
+
+        &__block--4 {
+            margin-bottom: 0; 
+        }
+    }
+
+    @media (max-width:576px) {
+        &__head {
+            text-align: left;
+        }
+
+        &__label {
+            font-size: 5.35vw;
+        }
+    }
+
+}

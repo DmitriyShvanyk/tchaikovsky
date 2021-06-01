@@ -1,0 +1,103 @@
+.btn {
+  outline: none;
+  position: relative;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1.4;
+  padding: 16px 20px;
+  min-width: 142px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: $white;
+  border: none;
+  text-decoration: none;
+  background-color: #738AFF;
+  border-radius: 12px;
+  will-change: opacity;
+  transition: opacity .3s ease;
+
+  &--between {
+    justify-content: space-between;
+  }
+
+  &__icon {
+    margin-left: 10px;
+    fill: none;
+  }
+
+  &--danger {
+    background-color: #FB7756;
+  }
+
+  &--w100 {
+    width: 100%;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    text-decoration: none;
+    opacity: .9;
+  }
+
+  &__text{
+    display: flex;
+    align-items: center;
+  }
+
+  &__text-icon{
+    margin-right: 10px;
+  }
+
+
+  &--social {
+    color: #1686D3;
+    background-color: rgba(22, 134, 211, 0.08);    
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #1686D3;
+      opacity: .7;
+    }
+  }
+
+  &--social--vk{
+    color: #2A87F0;
+    background-color: rgba(42, 135, 240, 0.08);
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #2A87F0;
+    }
+  }
+
+  &--social--viber{
+    color: #7360ED;
+    background-color: rgba(115, 96, 237, 0.08);
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #7360ED;
+    }
+  }
+
+  &--social--fb{
+    color: #1C77ED;
+    background-color: rgba(28, 119, 237, 0.08);
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #1C77ED;
+    }
+  }
+
+}

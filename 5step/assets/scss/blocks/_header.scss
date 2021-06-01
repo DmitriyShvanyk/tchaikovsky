@@ -1,0 +1,110 @@
+.header {
+  background: radial-gradient(109.26% 84.48% at 0.66% 95.51%, rgba(103, 100, 255, 0) 0%, #9487FF 100%), radial-gradient(112.81% 87.22% at 0.66% 95.51%, #B76FFF 0%, rgba(103, 100, 255, 0) 100%), #6764FF;
+  position: relative;
+  color: $white;
+  overflow: hidden;
+
+  &__container {
+    padding-top: 28px;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__logo {
+    margin-bottom: 30px;
+  }
+
+  &__event {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 11px;
+  }
+
+  &__title {
+    max-width: 60%;
+    margin-bottom: 15px;
+    color: $white;
+  }
+
+  &__lead {
+    max-width: 70%;
+  }
+
+  &__btn {
+    margin-bottom: 40px;
+  }
+
+  &__foot {
+    font-weight: 500;
+    font-size: 14px;        
+    position: relative;
+    z-index: 3;    
+    width: calc(100% + 40px);
+    margin-left: -20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), rgba(44, 43, 63, 0.1);
+      backdrop-filter: blur(60px);
+    }
+  }
+
+  &__foot-inner{
+    min-height: 50px;
+    padding: 5px 20px;
+    max-width: 767px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__date {
+    display: flex;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  &__date-icon {
+    margin-right: 10px;
+  }
+
+  &__body,
+  &__date,
+  &__name {
+    position: relative;
+    z-index: 9;
+  }
+
+  &__women {
+    max-width: 172px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  &__specular{
+    position: absolute; top: 0;
+    left: 56%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    width: 96px;
+  }
+
+  &__decor{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+
+}

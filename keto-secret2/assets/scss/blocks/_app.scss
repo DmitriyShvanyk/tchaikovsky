@@ -1,0 +1,57 @@
+.app {
+    min-height: 693px;
+    background: #7B33C5 url(../img/app/bg2.jpg) no-repeat center top;
+    background-size: cover;
+
+    &__container{
+        padding-top: 73px;
+    }
+
+    &__title,
+    &__caption{
+        color: $white;
+    }
+
+    &__title{
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 35px;
+        font-size: 48px;
+    }
+
+    &__caption{
+        font-size: 24px;
+        max-width: 665px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 65px;
+    }
+
+    @media (max-width: 767px){
+        &__container{
+            padding-top: 48px;
+        }
+
+        &__title{
+            margin-bottom: 18px;
+            font-size: 43px;
+        }
+
+        &__caption{
+            margin-bottom: 40px;
+        }
+    }
+
+    @media (max-width: 576px){
+        &__title{
+            margin-bottom: 18px;
+            font-size: 10.5vw;
+        }
+
+        &__caption{
+            margin-bottom: 22px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.module-list {
+    padding-left: 0;
+    list-style: none;
+    margin: 20px 0 20px;
+
+    &__item {
+        margin-bottom: 15px;
+    }
+
+    &__caption {
+        text-transform: uppercase;
+        color: #828282;
+        font-size: 14px;
+        letter-spacing: .15em;
+    }
+
+    @media (max-width:767px) {
+        & {
+            line-height: 1.25;
+        }
+    }
+}
