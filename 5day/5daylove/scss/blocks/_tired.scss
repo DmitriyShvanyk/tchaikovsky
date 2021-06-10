@@ -1,0 +1,110 @@
+.tired {
+    min-height: 541px;
+    background-color: #25232A;
+    position: relative;
+
+    &__container,
+    &__title {
+        color: $white;
+    }
+
+    &__container {
+        padding-top: 90px;
+        padding-bottom: 70px;
+        position: relative;
+    }
+
+    &__title {
+        margin-bottom: 37px;
+    }
+
+    &__line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__content {
+        font-size: 32px;
+        line-height: 1.4;
+        font-weight: 500;
+    }
+
+    &__list {
+        padding-left: 0;
+        list-style: none;
+        margin: 0 0 39px;
+    }
+
+    &__list,
+    &__list-item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__list-item {
+        margin-right: 32px;
+    }
+
+    &__list-icon {
+        min-width: 32px;
+        margin-right: 12px;
+    }
+
+    &__para {
+        max-width: 800px;
+    }    
+
+    @media (max-width: 1200px) {
+        &__content {
+            font-size: 24px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        &__content {
+            font-size: 24px;
+        }
+
+        &__list {
+            display: block;
+            margin-bottom: 14px;
+        }
+
+        &__list-item {
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__container {
+            padding-top: 50px;
+            padding-bottom: 65px;
+        }
+
+        &__title {
+            font-size: 48px;
+            line-height: 1.1;
+            margin-bottom: 32px;
+        }
+
+        &__line {
+            transform: rotate(-15deg);
+        }
+    }
+
+    @media (max-width: 576px) {
+        &__title {
+            font-size: 32px;
+        }
+
+        &__list-icon {
+            min-width: 24px;
+            height: 24px;
+        }
+    }
+}

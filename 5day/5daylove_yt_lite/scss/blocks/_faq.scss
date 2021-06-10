@@ -1,0 +1,53 @@
+.faq{
+    &__container{
+        padding-bottom: 88px;
+    }
+
+    &__title{
+        margin-bottom: 30px;        
+    }
+
+    .accordion__content{
+        font-size: 20px;
+
+        p{
+            margin-top: 13px;
+            margin-bottom: 0;
+        }
+    }
+
+    .accordion__head{
+        font-size: 32px;
+        letter-spacing: -0.01em;
+    }
+
+    @media (max-width: 767px){
+        &__container{
+            padding-bottom: 56px;
+        }
+
+        .accordion__head{
+            font-size: 28px;
+            padding-right: 45px;
+        }
+
+        .accordion__content{
+            font-size: 16px;
+    
+            p{
+                margin-top: 13px;
+                margin-bottom: 0;
+            }
+        }
+
+        .accordion__icon {
+            top: 0;
+        }
+    }
+
+    @media (max-width: 576px){
+        .accordion__head{
+            font-size: 20px;
+        }        
+    }
+}

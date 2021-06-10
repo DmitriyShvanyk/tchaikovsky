@@ -1,0 +1,130 @@
+.reasons {
+    background: linear-gradient(45deg, rgba(240, 253, 214, 1) 0%, rgba(255, 255, 255, 1) 47%, rgba(255, 255, 255, 1) 100%);
+    height: 720px;
+    position: relative;
+
+    &__container {
+        padding-top: 117px;
+    }
+
+    &__content {
+        max-width: 570px;
+        margin-bottom: 50px;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-family: $fontDefault;
+    }
+
+    &__btn {
+        min-width: 250px;
+        width: auto;
+    }
+
+    &__subtitle-figure {
+        position: relative;
+
+        span {
+            position: relative;
+            z-index: 9;
+        }
+    }
+
+    &__figure {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        min-width: calc(100% + 16px);
+    }
+
+    &__subtitle-line {
+        background-image: linear-gradient(0deg,
+                transparent -4px, // go bottom
+                #FF856A -2px,
+                #FF856A 3px, // go top
+                transparent 0px, // blur on top of the border
+                transparent 100%);
+    }
+
+    &__3d {
+        position: absolute;
+        bottom: 0;
+        right: 12.4%;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: -57px;
+        left: 16.2%;
+    }
+
+    @media (max-width: 1200px) {
+        &__3d {
+            right: 0;
+        }
+    }
+
+    @media (max-width: 991px) {
+        & {
+            height: 640px;
+        }
+
+        &__subtitle {
+            font-size: 24px;
+        }
+
+        &__content {
+            max-width: 60%;
+        }
+
+        &__3d {
+            max-width: 40%;
+        }
+    }
+
+    @media (max-width: 767px) {
+        & {
+            height: auto;
+        }
+
+        &__container {
+            padding-top: 100px;
+            padding-bottom: 90px;
+        }
+
+        &__subtitle {
+            margin-bottom: 34px;
+        }
+
+        &__subtitle-line {
+            background-image: linear-gradient(0deg,
+                    transparent -4px, // go bottom
+                    #FF856A -2px,
+                    #FF856A 2px, // go top
+                    transparent 0px, // blur on top of the border
+                    transparent 100%);
+        }
+
+        &__arrow {
+            top: -68px;
+            left: 8.5%;
+            max-height: 138px;
+        }
+
+        &__content {
+            max-width: 100%;
+            margin-bottom: 35px;
+        }
+
+        &__3d {
+            display: none;
+        }
+
+        &__btn {
+            min-width: 214px;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.app {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 910px;
+        height: 910px;
+        left: -195px;
+        background: radial-gradient(35.55% 35.55% at 50% 50%, #F6DCFB 0%, rgba(250, 241, 252, 0) 100%);
+        transform: translateY(-50%);
+    }
+
+    &__container {
+        padding-top: 50px;
+        padding-bottom: 40px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__heart {
+        position: absolute;
+        top: -32px;
+        right: 3.5%;
+        max-height: 96px;
+    }
+
+    @media (max-width: 991px) {
+        &__container {
+            padding-top: 35px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__container {
+            padding-bottom: 30px;
+        }
+
+        &__heart {
+            top: -60px;
+            right: 0;
+        }
+    }
+
+    @media (max-width:576px) {
+        &__container {
+            padding-top: 64px;
+            padding-bottom: 64px;
+            position: relative;
+            z-index: 1;
+        }
+    }
+}

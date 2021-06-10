@@ -1,0 +1,278 @@
+.header {
+  background: radial-gradient(66.18% 163.46% at 100% 0%, #FF77D9 0%, rgba(255, 178, 51, 0) 100%), radial-gradient(50% 123.5% at 0% 100%, #FF3737 0%, rgba(255, 178, 51, 0) 100%), linear-gradient(0deg, #FFB233, #FFB233);
+  position: relative;
+  color: $white;
+  overflow: hidden;
+  z-index: 1;
+
+  &__container {
+    padding-top: 37px;
+    padding-bottom: 37px;
+    position: relative;
+    z-index: 2;
+    min-height: 583px;
+  }
+
+  &__logo {
+    margin-bottom: 37px;
+  }
+
+  &__events {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  &__event {
+    margin-right: 33px;
+  }
+
+  &__date {
+    display: flex;
+    align-items: center;
+    /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
+  }
+
+  &__date--mobile {
+    display: none;
+  }
+
+  &__date-icon {
+    margin-right: 10px;
+  }
+
+  &__title {
+    font-size: 92px;
+    line-height: .9;
+    max-width: 600px;
+    margin-bottom: 25px;
+    color: $white;
+    letter-spacing: -0.03em;
+  }
+
+  &__title-icon {
+    vertical-align: middle;
+  }
+
+  &__title-icon--mobile {
+    display: none;
+  }
+
+  &__lead {
+    max-width: 670px;
+    margin-bottom: 43px;
+  }
+
+  &__btn {
+    margin-bottom: 38px;
+  }
+
+
+  &__body,
+  &__date,
+  &__name {
+    position: relative;
+    z-index: 9;
+  }
+
+  &__women {
+    position: absolute;
+    top: 0;
+    right: -25px;
+    pointer-events: none;
+    z-index: 1;
+    max-width: 521px;
+  }
+
+  &__women--mob {
+    display: none;
+  }
+
+  &__like {
+    position: absolute;
+    top: 7%;
+    left: 49%;
+    pointer-events: none;
+    max-height: 60px;
+  }
+
+  &__line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+  }
+
+  &__foot {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    min-height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    padding: 5px 20px;
+    width: 100%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba($white, 0.25);
+      backdrop-filter: blur(60px);
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &__title {
+      max-width: 60%;
+    }
+
+    &__women {
+      display: none;
+    }
+
+    &__women--mob {
+      display: block;
+      top: auto;
+      bottom: 0;
+      right: 0;
+      max-width: 178px;
+    }
+
+    &__lead {
+      max-width: 500px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__title {
+      max-width: 80%;
+      font-size: 82px;
+    }
+
+    &__lead {
+      max-width: 70%;
+    }
+
+    &__like {
+      top: 1%;
+      left: 55%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &{
+      background: linear-gradient(45deg, rgba(255,107,71,1) 0%,rgba(255,151,124,1) 50%,rgba(255,125,202,1) 100%);
+    }
+
+    &__container {
+      padding-top: 30px;
+      padding-bottom: 0;
+      min-height: 583px;
+    }
+
+    &__logo {
+      margin-bottom: 28px;
+    }
+
+    &__events {
+      margin-bottom: 20px;
+    }
+
+    &__event {
+      margin-right: 0;
+    }
+
+    &__title {
+      font-size: 72px;
+      margin-bottom: 12px;
+    }
+
+    &__lead {
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+
+    &__date {
+      display: none;
+    }
+
+    &__women--mob {
+      bottom: 40px;
+    }
+
+    &__btn {
+      margin-bottom: 32px;
+      width: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &__like {
+      top: -8px;
+      left: 49%;
+      max-height: 44px;
+    }
+
+    &__foot,
+    &__foot &__date{
+      display: flex;
+    }
+
+    &__line {
+      transform: scale(1, -1) rotate(-45deg);
+      left: -8%;
+    }
+  }
+
+  @media (max-width: 640px) {
+    &__title {
+      font-size: 62px;
+    }
+  }
+
+  @media (max-width: 576px) {
+
+    &__event {
+      font-size: 14px;
+    }
+
+    &__title {
+      font-size: 52px;
+    }
+
+    &__title-icon {
+      display: none;
+    }
+
+    &__title-5days {
+      display: block;
+    }
+
+    &__title-icon--mobile {
+      display: inline-block;
+    }
+
+    &__lead {
+      max-width: 75%;
+    }
+
+    &__line {
+      left: -15%;
+    }
+
+  }
+
+}

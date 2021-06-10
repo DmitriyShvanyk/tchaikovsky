@@ -1,0 +1,30 @@
+.step {
+    position: relative;
+
+    &__container {
+        padding-top: 42px;
+        padding-bottom: 1px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__lead {
+        font-weight: 400;
+        margin-bottom: 13px;
+    }
+
+    &__title {
+        margin-bottom: 28px;
+    }
+
+    &__video {
+        margin-bottom: 24px;
+    }
+
+    &__decor {
+        position: absolute;
+        top: 0;
+        right: 0;
+        pointer-events: none;
+    }
+}

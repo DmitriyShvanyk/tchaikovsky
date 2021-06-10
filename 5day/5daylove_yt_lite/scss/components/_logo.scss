@@ -1,0 +1,18 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: top;
+  text-decoration: none;
+  transition: opacity .3s ease;
+
+  &__img{
+    max-height: 31px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    opacity: .8;
+  }
+}
