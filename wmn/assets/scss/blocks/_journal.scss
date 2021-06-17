@@ -1,0 +1,12 @@
+.journal {
+    &__container {
+        padding-bottom: 28px;
+    }
+
+    @media (max-width: 576px){       
+        &__container {
+            padding-top: 23px;
+            padding-bottom: 10px;
+        }
+    }
+}

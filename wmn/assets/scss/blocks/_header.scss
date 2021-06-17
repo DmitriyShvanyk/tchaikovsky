@@ -1,0 +1,175 @@
+.header {
+  background: radial-gradient(49.34% 102.38% at 0.66% 95.51%, rgba(103, 100, 255, 0) 0%, #9487FF 100%), radial-gradient(101.63% 226.55% at 0.66% 95.51%, #B76FFF 0%, rgba(103, 100, 255, 0) 100%), #6764FF;
+  position: relative;
+  color: $white;
+  overflow: hidden;
+
+  &__container {
+    padding-top: 19px;
+    padding-bottom: 39px;
+    position: relative;
+    z-index: 99;
+    min-height: 679px;
+  }
+
+  &__head {
+    margin-bottom: 52px;
+  }
+
+  &__title {
+    max-width: 700px;
+    margin-bottom: 24px;
+    color: $white;
+  }
+
+  &__lead {
+    max-width: 650px;
+    margin-bottom: 32px;
+  }
+
+  &__btn {
+    margin-bottom: 82px;
+  }
+
+
+  &__body,
+  &__date,
+  &__name {
+    position: relative;
+    z-index: 9;
+  }
+
+  &__women {
+    position: absolute;
+    top: 0;
+    right: -35px;
+    pointer-events: none;
+    z-index: 1;
+    max-width: 517px;
+  }
+
+  &__decor {
+    position: absolute;
+    top: 68.8%;
+    left: 0;
+    pointer-events: none;
+    max-height: 95px;
+    z-index: 9;
+  }
+
+  &__decor--2 {
+    left: auto;
+    right: 2%;
+    top: 48%;
+    max-height: 165px;
+  }
+
+  &__line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+
+  @media (min-width: 1441px) {
+    &__decor--2 {
+      right: 8%;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &__title {
+      max-width: 66%;
+    }
+
+    &__women {
+      object-fit: cover;
+      height: 100%;
+      max-width: 100%;
+      right: -15%;
+    }
+
+    &__lead {
+      max-width: 500px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__women {
+      right: -25%;
+    }
+  }
+
+
+  @media (max-width: 800px) {
+    &__women {
+      right: -30%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__container {
+      padding-top: 6px;
+      padding-bottom: 0;
+      min-height: 535px;
+    }    
+
+    &__menu {
+      overflow-x: auto;
+      width: calc(100% + 30px);
+      margin-left: -15px;
+      background: linear-gradient(0deg, rgba($white, .35), rgba($white, .35)), rgba(44, 43, 63, .1);
+
+      &::before {
+        background: none;
+        border-radius: 0;
+        backdrop-filter: none;
+      }
+
+      .menu__link,
+      .menu__link--active {
+
+        &,
+        &:hover,
+        &:focus,
+        &:active {
+          border-radius: 0;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {    
+    &__container {
+      min-height: 1px;
+    }   
+
+    &__head {
+      margin-bottom: 15px;
+    }
+
+    &__title {
+      max-width: 90%;
+      margin-bottom: 15px;
+    }
+
+    &__lead {
+      line-height: 1.5;
+      margin-bottom: 28px;
+    }
+
+    &__btn {
+      margin-bottom: 72px;
+    }
+
+    &__decor--2 {
+      right: .5%;
+      top: 62%;
+      max-height: 135px;
+    }
+  }
+}

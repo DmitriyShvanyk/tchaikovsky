@@ -1,0 +1,114 @@
+.news-list {
+    &__item {
+        display: flex;
+        margin-bottom: 36px;
+
+        &:nth-of-type(4n + 1) {
+            .news-list__pict {
+                background-color: rgba(255, 139, 89, 0.05);
+            }
+
+            .news-list__icon {
+                color: #FF8B59;
+            }
+        }
+
+        &:nth-of-type(4n + 2) {
+            .news-list__pict {
+                background-color: rgba(255, 89, 94, 0.05);
+            }
+
+            .news-list__icon {
+                color: #FF595E;
+            }
+        }
+
+        &:nth-of-type(4n + 3) {
+            .news-list__pict {
+                background-color: rgba(27, 201, 128, 0.05);
+            }
+
+            .news-list__icon {
+                color: #1BC981;
+            }
+        }
+
+        &:nth-of-type(4n + 4) {
+            .news-list__pict {
+                background-color: rgba(103, 100, 255, 0.05);
+            }
+
+            .news-list__icon {
+                color: #6764FF;
+            }
+        }
+    }
+
+    &__pict {
+        width: 50px;
+        height: 50px;
+        max-width: 50px;
+        min-width: 50px;
+        margin-right: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 139, 89, 0.05);
+        border-radius: 12px;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        color: #FF8B59;
+        fill: none;
+    }
+
+    &__title {
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-family: $fontDefault;
+    }
+
+    &__link{
+        color: $dark;
+        transition: color .3s ease;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $dark;
+            opacity: .8;
+        }
+    }
+
+    @media (max-width: 767px) {
+        & {
+
+            display: flex;
+            overflow-x: auto;
+            width: calc(100% + 30px);
+            margin-left: -15px;
+            padding-left: 15px;
+            margin-top: 20px;
+            margin-bottom: 32px;
+        }
+
+        &__item {
+            display: block;
+            min-width: 270px;
+            margin-right: 28px;
+            margin-bottom: 16px;
+        }
+
+        &__pict {
+            margin-bottom: 14px;
+            margin-right: 0;
+        }
+
+        &__title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    }
+}
