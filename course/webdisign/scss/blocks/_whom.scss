@@ -1,0 +1,58 @@
+.whom {
+    &__container {
+        padding-top: 80px;
+        padding-bottom: 1px;
+    }
+
+    &__item {
+        margin-top: 15px;
+    }
+
+    &__pict {
+        min-height: 225px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    &__subtitle {
+        margin-bottom: 12px;
+    }
+
+    &__text {
+        max-width: 350px;
+
+        p {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+    }
+
+    @media (max-width: 767px){
+        &__container {
+            padding-top: 57px;
+            padding-bottom: 1px;
+        }
+
+        &__title{
+            margin-bottom: 0px;
+        }
+
+        &__item {
+            margin-top: 10px;
+        }
+
+        &__pict {
+            margin-bottom: 0;
+        }
+
+        &__img{
+            max-height: 169px;
+        }
+
+        &__subtitle {
+            margin-top: -10px;
+            margin-bottom: 16px;
+        }
+    }
+}

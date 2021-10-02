@@ -1,0 +1,88 @@
+.sertif {
+    &__container{
+        padding-bottom: 1px;
+    }
+
+    &__title {
+        margin-top: -55px;
+        margin-bottom: 17px;
+    }
+
+    &__pict {
+        text-align: center;
+        position: relative;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border: 1.57738px solid #D8DEE8;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            opacity: .25;
+        }
+
+        &::before {
+            width: 423.53px;
+            height: 423.53px;
+        }
+
+        &::after {
+            width: 576px;
+            height: 576px;
+        }
+    }
+
+    &__img {
+        position: relative;
+        z-index: 99;
+    }
+
+    &__leaf {
+        position: absolute;
+        top: 66px;
+        left: -60px;
+        width: 70px;
+        height: 70px;
+    }
+
+    @media (max-width:991px) {
+        &__container{
+            padding-top: 80px;
+        }
+
+        &__title {
+            margin-top: 13px;
+            margin-bottom: 17px;
+        }
+
+        &__leaf {
+            top: -20px;
+            left: auto;
+            right: 9%;
+            width: 35px;
+            height: 35px;
+            transform: rotate(115deg);
+        }
+    }
+
+    @media (max-width:767px) {
+        &__container{
+            padding-top: 67px;
+        }
+
+        &__title {
+            line-height: 1.1;
+        }
+
+        &__pict {
+            text-align: left;
+        }
+
+        &__img {
+            max-height: 238px;
+        }
+    }
+}

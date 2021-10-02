@@ -1,0 +1,141 @@
+.footer {
+  flex: 0 0 auto;
+  position: relative;
+
+  &,
+  &__link {
+    color: $gray;
+  }
+
+  &__container {
+    padding-top: 15px;
+    padding-bottom: 40px;
+    font-size: 16px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__link {
+    text-decoration: underline;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    transition: .3s ease;
+
+    &+& {
+      margin-left: 24px;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $gray;
+      opacity: .9;
+      text-decoration: none;
+    }
+  }
+
+  &__link-border {
+    border-bottom: 1px solid rgba($gray, .2);
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-bottom-color: $gray;
+    }
+  }
+
+  &__policy {
+    display: flex;
+  }
+
+  &__copy {
+    white-space: nowrap;
+
+    &+& {
+      margin-left: 24px;
+    }
+  }
+
+  @media (max-width:1200px) {
+    &__policy {
+      flex-direction: column;
+    }
+
+    &__copy {      
+      &+& {
+        margin-left: 0;
+        margin-top: 0;
+      }
+    }
+  }
+
+  @media (max-width:991px) {
+    &__menu {
+      padding-left: 0;
+      padding-right: 0;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__link{
+      &+&{
+        margin-top: 12px;
+        margin-left: 0;
+      }
+    }
+
+    
+
+    &__copy {
+      display: block;
+
+      &+& {
+        margin-left: 0;
+        margin-top: 7px;
+      }
+    }
+  }
+
+  @media (max-width:767px) {
+    &__container {
+      padding-top: 35px;
+      padding-bottom: 40px;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+
+    &__row{
+      display: block;
+    }
+
+    &__menu {
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 25px;
+    }
+
+    &__link {
+      font-weight: 500;
+      margin-bottom: 0px;
+    }    
+
+    &__policy {
+      border-top: 1px solid rgba(175,177,182, .25);
+      padding-top: 23px;
+    }
+  }
+}

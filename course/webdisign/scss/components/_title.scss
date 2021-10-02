@@ -1,0 +1,38 @@
+.title {
+    color: $dark;
+    font-family: $fontDefaultTitle;
+    margin-top: 0;
+    font-weight: bold;
+
+    &--h2 {
+        font-size: 48px;
+        line-height: 1.2;
+        margin-bottom: 28px;
+        letter-spacing: 0
+    }
+
+    &--h3 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 14px;
+    }
+
+    @media (max-width:991px) {
+        &--h2 {
+            font-size: 44px;
+        }
+    }
+
+    @media (max-width:767px) {
+        &--h2 {
+            font-size: 40px;
+        }
+    }
+
+    @media (max-width:576px) {
+        &--h2 {
+            font-size: 38px;
+            margin-bottom: 26px;
+        }
+    }
+}

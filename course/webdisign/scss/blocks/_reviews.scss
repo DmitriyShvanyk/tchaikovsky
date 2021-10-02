@@ -1,0 +1,151 @@
+.reviews {
+    &__container {
+        padding-top: 22px;
+        padding-bottom: 50px;
+    }
+
+    &__title {
+        margin-bottom: 45px;
+    }
+
+    &__block {
+        display: flex;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        &:first-of-type {
+            padding-top: 0;
+        }
+
+        &+& {
+            border-top: 2px solid #F4F7FA;
+        }
+    }
+
+    &__block-head {
+        width: 197px;
+    }
+
+    &__block-body {
+        width: calc(100% - 197px);
+    }
+
+    &__pict {
+        margin-bottom: 6px;
+    }
+
+    &__subtitle,
+    &__item-subtitle {
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    &__item-subtitle {
+        margin-bottom: 15px;
+    }
+
+    .list__item::before {
+        top: 11px;
+    }
+
+    &__blockquote {
+        display: inline-block;
+        vertical-align: top;
+        background-color: #F4F7FA;
+        border-radius: 5px 20px 20px 20px;
+        padding: 20px 20px 20px 38px;
+        max-width: 685px;
+        margin: 25px 0 0 0;
+        position: relative;
+
+        &::before {
+            content: '“';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            line-height: 1;
+            color: #A9B5CA;
+        }
+    }
+
+    &__blockquote-subtitle {
+        font-weight: 500;
+        font-style: italic;
+    }
+
+    &__block--2,
+    &__block--4 {
+        .reviews__blockquote {
+            max-width: 890px;
+        }
+    }
+
+    &__block--3 {
+        .reviews__blockquote {
+            max-width: 950px;
+        }
+    }
+
+    @media (max-width:991px) {
+        &__container {
+            padding-top: 80px;
+        }
+    }
+
+    @media (max-width:767px) {
+        &__container {
+            padding-top: 49px;
+            padding-bottom: 15px;
+        }
+
+        &__title {
+            line-height: 1.1;
+            margin-bottom: 40px;
+        }
+
+        &__block {
+            flex-wrap: wrap;
+            padding-top: 40px;
+            padding-bottom: 10px;
+        }
+
+        &__block-head,
+        &__block-body {
+            width: 100%;
+        }
+
+        &__block-head{
+            display: flex;
+            align-items: center;
+        }
+
+        &__block-body{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        &__pict{
+            margin-right: 16px;
+        }
+
+        &__img {
+            width: 70px;
+            height: 70px;
+        }
+
+        &__items{
+            margin-top: 22px;
+        }
+
+        &__item{
+            margin-bottom: 35px;
+        }
+
+        &__blockquote {
+            padding: 15px 15px 15px 32px;
+            max-width: 100%;
+            margin: 17px 0 0 0;
+        }
+    }
+}
