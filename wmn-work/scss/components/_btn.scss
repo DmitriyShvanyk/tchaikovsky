@@ -1,0 +1,86 @@
+.btn {
+  outline: none;
+  position: relative;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1.4;
+  padding: 16px 30px;
+  min-width: 212px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: $white;
+  border: none;
+  text-decoration: none;
+  background-color: #9381FA;
+  border-radius: 12px;
+  will-change: opacity;
+  transition: opacity .3s ease;
+
+  &--between {
+    justify-content: space-between;
+  }
+
+  &__icon {
+    margin-left: 10px;
+    fill: none;
+    width: 24px;
+    height: 22px;
+  }
+
+  &--danger {
+    background-color: #FB7756;
+  }
+
+  &--w100 {
+    width: 100%;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    text-decoration: none;
+    opacity: .9;
+  }
+
+  &--outline {
+    background-color: transparent;
+    box-shadow: 0 0 0 2px rgba($white, .15);
+    transition: .3s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+      background-color: rgba($white, .15);
+      box-shadow: 0 0 0 2px rgba($white, .35);
+    }
+  }
+
+  &--warning {
+    color: #403A3A;
+    background-color: #FFD686;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #403A3A;
+    }
+  }
+
+  @media (max-width: 576px) {
+    & {
+      font-size: 18px;
+      padding: 14px 20px;
+      min-width: 180px;
+    }
+
+    &__text-icon {
+      margin-right: 6px;
+    }
+  }
+}

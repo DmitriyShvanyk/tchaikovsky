@@ -1,0 +1,57 @@
+.review {
+    display: flex;
+    align-items: center;
+    min-width: 270px;
+    max-width: 270px;
+    margin-right: 30px;
+    color: $dark;
+    will-change: opacity;
+    transition: opacity .3s ease;
+
+    &__pict {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 70px;
+        margin-right: 10px;
+        height: 70px;
+        border-radius: 50%;
+        position: relative;
+        background: linear-gradient(135deg, rgba(255, 166, 144, 1) 0%, rgba(204, 144, 232, 1) 100%);
+    }
+
+    &__img {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 0 0 3px $white;
+    }
+
+    &__name,
+    &__caption {
+        margin: 0;
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+    &__name {
+        margin-bottom: 4px;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $dark;
+        opacity: .8;
+    }
+
+    @media (max-width: 767px) {
+        & {
+            margin-right: 25px;
+        }
+    }
+}

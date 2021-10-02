@@ -1,0 +1,23 @@
+.materials {
+    &__container {
+        padding-top: 13px;
+    }
+
+    &__title {
+        font-size: 32px;
+        line-height: 1.2;
+        letter-spacing: -0.01em;
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 767px){
+        &__container {
+            padding-top: 4px;
+        }
+
+        &__title {
+            font-size: 24px;
+            margin-bottom: 23px;
+        }
+    }
+}

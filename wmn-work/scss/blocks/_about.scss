@@ -1,0 +1,50 @@
+.about {
+    &__container {
+        padding-top: 65px;
+    }
+
+    &__logo {
+        display: block;
+        margin-bottom: 21px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 1.5;
+        letter-spacing: -0.02em;
+        margin-bottom: 25px;
+
+        span{
+            font-weight: 700;
+        }
+    }
+
+    &__text{
+        max-width: 770px;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    @media (max-width: 767px){
+        &__container {
+            padding-top: 39px;
+            padding-bottom: 15px;
+        }
+
+        &__logo {
+            max-height: 80px;
+            margin-bottom: 17px;
+        }
+    
+        &__title {
+            font-size: 24px;
+            letter-spacing: 0;
+            margin-bottom: 18px;
+        }
+    
+        &__text{
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.banner {
+    display: block;
+
+    &__pict {
+        display: block;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: opacity .3s ease;
+        margin-bottom: 32px;
+
+        &:hover,
+        &:focus,
+        &:active {
+            opacity: .8;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__share {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        margin-top: 45px;
+    }
+
+    &__share-caption {
+        font-weight: 500;
+        font-size: 16px;
+        color: $gray;
+        margin-right: 16px;
+    }
+
+    &__info {
+        font-size: 16px;
+        color: $gray;
+
+        .info__icon {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    @media (max-width:767px){
+        &__pict {
+            margin-bottom: 24px;
+        }
+
+        &__share {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            margin-top: 35px;
+        }
+
+        &__share-caption {
+            font-size: 18px;
+            margin-right: 0;
+            margin-bottom: 12px;
+        }
+    }
+}

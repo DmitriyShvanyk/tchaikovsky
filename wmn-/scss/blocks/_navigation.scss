@@ -1,0 +1,40 @@
+.navigation {
+    background-color: #FAFAFA;
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        min-height: 44px;
+        font-weight: 500;
+        font-size: 14px;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    &__link {
+        color: $dark;
+        margin-right: 32px;
+        transition: opacity .3s ease;
+
+        &:hover,
+        &:focus,
+        &:active {
+            opacity: .8;
+            color: $dark;
+        }
+    }
+
+    @media (max-width: 767px){
+        &__menu{
+            width: calc(100% + 30px);
+            margin-left: -15px;
+            padding-left: 15px;
+        }
+    }
+
+    @media (max-width: 576px){
+        &__menu {
+            min-height: 41px;
+        }
+    }
+}

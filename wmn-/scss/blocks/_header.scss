@@ -1,0 +1,255 @@
+.header {
+  background: radial-gradient(44.13% 85.25% at 0% 119.21%, #8CC8FF 0%, rgba(119, 96, 214, 0) 100%), radial-gradient(46.39% 86.75% at 76.84% 100%, #FD9FFF 0%, rgba(231, 84, 179, 0) 100%), radial-gradient(56.6% 105.84% at 15.69% -15.71%, #A180FF 0%, rgba(104, 85, 200, 0) 100%), linear-gradient(0deg, #6855C8, #6855C8);
+  position: relative;
+  color: $white;
+  overflow: hidden;
+
+  &__container {
+    padding-top: 19px;
+    padding-bottom: 39px;
+    position: relative;
+    z-index: 99;
+    min-height: 670px;
+  }
+
+  &__container--active {
+    z-index: 100;
+  }
+
+  &__head {
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    max-width: 700px;
+    margin-bottom: 30px;
+    color: $white;
+  }
+
+  &__lead {
+    max-width: 650px;
+    margin-bottom: 32px;
+  }
+
+  &__list {
+    padding-left: 0;
+    list-style: none;
+    font-size: 28px;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    margin-bottom: 56px;
+  }
+
+  &__list-item {
+    position: relative;
+    margin-bottom: 12px;
+  }
+
+  &__list-icon,
+  &__list-icon {
+    will-change: opacity;
+    transition: opacity .3s ease;
+  }
+
+  &__list-text {
+    opacity: .4;
+  }
+
+  &__list-icon {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    width: 18px;
+    height: 18px;
+    color: $white;
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+
+  &__list-item--active &__list-text,
+  &__list-item--active &__list-icon {
+    opacity: 1;
+  }
+
+  &__btn {
+    margin-bottom: 40px;
+  }
+
+
+  &__body,
+  &__date,
+  &__name {
+    position: relative;
+    z-index: 9;
+  }
+
+  &__photo {
+    position: absolute;
+    bottom: 0;
+    right: -35px;
+    pointer-events: none;
+    z-index: 1;
+    max-width: 685px;
+  }
+
+  &__photo--m {
+    position: relative;
+    top: -5px;
+    left: -15px;
+    right: auto;
+    display: block;
+    margin: 0 auto;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: calc(50% + 40px);
+      left: calc(50% + 15px);
+      width: 312.26px;
+      height: 158.52px;
+      background-color: #CFC8EB;
+      opacity: .4;
+      transform: rotate(-3.31deg) translate(-50%, -50%);
+      z-index: -1;
+      border-radius: 2em;
+    }
+  }
+
+  &__photo-img {
+    max-height: 259px;
+  }
+
+  &__decor {
+    position: absolute;
+    top: 17%;
+    left: 0;
+    pointer-events: none;
+    max-height: 95px;
+    z-index: 9;
+  }
+
+  &__decor--2 {
+    left: auto;
+    right: 7%;
+    top: 30%;
+    max-height: 83px;
+  }
+
+  &__line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+
+  @media (min-width: 1441px) {
+    &__decor--2 {
+      right: 8%;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &__title {
+      max-width: 66%;
+    }
+
+    &__lead {
+      max-width: 500px;
+    }
+
+    &__photo {
+      right: -175px;
+    }
+
+    &__list-icon {
+      display: none;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__photo {
+      right: -15%;
+      max-width: 500px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__container {
+      padding-top: 6px;
+      padding-bottom: 0;
+      min-height: 535px;
+    }
+
+    &__title {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 90%;
+    }
+
+    &__body,
+    &__title,
+    &__list {
+      text-align: center;
+    }
+
+    &__list {
+      font-size: 20px;
+      letter-spacing: 0;
+      margin-top: 12px;
+      margin-bottom: 32px;
+    }
+
+    &__list-item {
+      margin-bottom: 12px;
+    }
+
+    &__btn {
+      margin-bottom: 60px;
+    }
+
+    &__line--m {
+      height: auto;
+    }
+  }
+
+  @media (max-width: 576px) {
+    &__container {
+      min-height: 1px;
+    }
+
+    &__head {
+      margin-bottom: 15px;
+    }
+
+    &__title {
+      max-width: 100%;
+      margin-bottom: 15px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__lead {
+      line-height: 1.5;
+      margin-bottom: 28px;
+    }
+
+    &__decor {
+      top: -65px;
+      left: 50%;
+      max-height: 96px;
+      z-index: 9;
+      transform: rotate(25deg);
+    }
+
+    &__decor--2 {
+      top: 35.5%;
+      left: auto;
+      right: 5%;
+      max-height: 46px;
+      z-index: 99;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.link-more {
+    display: inline-block;
+    vertical-align: top;
+    height: 24px;
+    width: 24px;
+    color: $gray;
+    transition: color .3s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $dark;
+        text-decoration: none;
+    }
+}

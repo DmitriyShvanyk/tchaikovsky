@@ -1,0 +1,17 @@
+.journal {
+    &__container {
+        padding-top: 32px;
+        padding-bottom: 38px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 576px) {
+        &__container {
+            padding-top: 23px;
+            padding-bottom: 28px;
+        }
+    }
+}

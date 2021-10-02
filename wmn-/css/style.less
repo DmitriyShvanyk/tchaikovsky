@@ -1,0 +1,175 @@
+.posAbs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@max-width-desktop: 991px;
+
+.jobs {
+    margin-bottom: 77px;
+
+    h2 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 100%;
+
+        margin-bottom: 40px;
+    }
+
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+
+        @media (max-width: 991px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    .list {
+        display: flex;
+
+        @media (max-width: 991px) {
+            flex-direction: column;
+        }
+    }
+
+    .job {
+        border-radius: 12px;
+        overflow: hidden;
+
+        width: 100%;
+
+        cursor: pointer;
+        padding: 20px 40px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        transition: transform 0.25s ease;
+
+        position: relative;
+        min-height: 140px;
+
+        &::before {
+            background-position: center;
+            background-size: cover;
+        }
+
+
+
+        &:hover {
+            transform: scale(1.025);
+        }
+
+        img {
+            z-index: 1;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-family: "Cera Pro";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 110%;
+            margin: 0;
+
+            text-align: center;
+
+            color: #FFFFFF;
+            z-index: 1;
+        }
+    }
+
+    .job:not(:last-child) {
+        margin-right: 30px;
+
+        @media (max-width: @max-width-desktop) {
+            margin-bottom: 10px;
+            margin-right: 0;
+            width: 100%;
+        }
+    }
+
+
+
+    .job:nth-child(1) {
+        background: radial-gradient(113.67% 202.08% at 109.37% -30.9%, #FFE793 11.46%, rgba(255, 178, 51, 0) 100%), radial-gradient(87.34% 155.28% at -2.23% 111.81%, #FF6666 0%, rgba(255, 178, 51, 0) 100%), linear-gradient(0deg, #FFB233, #FFB233), #C4C4C4;
+
+        &::before {
+            content: "";
+            background-image: url("../img/jobs/button1-bg.png");
+
+            .posAbs();
+
+            @media (max-width: @max-width-desktop) {
+                background-image: url("../img/jobs/button1-bg-m.png");
+            }
+        }
+    }
+
+    .job:nth-child(2) {
+        background: radial-gradient(113.67% 202.08% at 109.37% -30.9%, #FD9FFF 0%, rgba(231, 84, 179, 0) 100%), radial-gradient(87.34% 155.28% at -2.23% 111.81%, #B880FF 0%, rgba(231, 84, 179, 0) 100%), #E754B3;
+
+        &::before {
+            content: "";
+            background-image: url("../img/jobs/button2-bg.png");
+
+            .posAbs();
+
+            @media (max-width: @max-width-desktop) {
+                background-image: url("../img/jobs/button2-bg-m.png");
+            }
+        }
+    }
+
+    .job:nth-child(3) {
+        background: radial-gradient(113.67% 202.08% at 109.37% -30.9%, #CDFF8C 0%, rgba(33, 195, 163, 0) 100%), radial-gradient(87.34% 155.28% at -2.23% 111.81%, #51B8CF 0%, rgba(33, 195, 163, 0) 100%), #20C3A3;
+
+        &::before {
+            content: "";
+            background-image: url("../img/jobs/button3-bg.png");
+
+            .posAbs();
+
+            @media (max-width: @max-width-desktop) {
+                background-image: url("../img/jobs/button3-bg-m.png");
+            }
+        }
+    }
+
+    .job:nth-child(4) {
+        background: radial-gradient(113.67% 202.08% at 109.37% -30.9%, #75DEFF 0%, rgba(104, 85, 200, 0) 100%), radial-gradient(87.34% 155.28% at -2.23% 111.81%, #A180FF 0%, rgba(104, 85, 200, 0) 100%), #6855C8;
+
+        &::before {
+            content: "";
+            background-image: url("../img/jobs/button4-bg.png");
+
+            .posAbs();
+
+            @media (max-width: @max-width-desktop) {
+                background-image: url("../img/jobs/button4-bg-m.png");
+            }
+        }
+    }
+}
+
+// Quick fixes. Please put this in the right place
+.jobs {
+    .container {
+        padding-top: 0;
+    }
+}
+
+.journal__container {
+    @media (min-width: 992px) {
+        padding-bottom: 3px;
+    }
+}
