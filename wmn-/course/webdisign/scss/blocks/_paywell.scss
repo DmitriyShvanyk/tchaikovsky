@@ -1,0 +1,59 @@
+.paywell {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &__container {
+        color: $white;
+        max-width: 1280px;
+        background: radial-gradient(31.9% 117.78% at 100% -10.34%, #FFE793 11.46%, rgba(255, 178, 51, 0) 100%), radial-gradient(84.35% 270.02% at 0.76% 100%, #FF6666 0.97%, rgba(255, 178, 51, 0) 100%), #FFB233;
+        border-radius: 16px;
+        padding: 45px 56px;
+    }
+
+    &__title {
+        color: $white;
+        margin-bottom: 12px;
+    }
+
+    &__title+&__caption {
+        max-width: 960px;
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        margin-bottom: 22px;
+    }
+
+    &__num {
+        font-size: 60px;
+        line-height: 1.4;
+        letter-spacing: -0.03em;
+        margin-bottom: 5px;
+    }
+
+    @media (max-width: 767px) {
+        & {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        &__container {
+            padding: 25px 15px 10px;
+        }
+
+        &__title {
+            line-height: 1.1;
+            margin-bottom: 16px;
+        }
+
+        &__item {
+            margin-bottom: 25px;
+        }
+
+        &__num {
+            font-size: 42px;
+            margin-bottom: 2px;
+        }
+    }
+
+}

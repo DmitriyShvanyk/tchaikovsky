@@ -1,0 +1,26 @@
+.program{
+    &__container{
+        padding-top: 95px;
+        padding-bottom: 67px;
+    }
+
+    &__foot{
+        max-width: 870px;
+    }
+
+    &__subtitle{
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 767px){
+        &__container{
+            padding-top: 57px;
+            padding-bottom: 9px;
+        }
+
+        &__title{
+            line-height: 1.12;
+            margin-bottom: 14px;
+        }
+    }
+}

@@ -1,0 +1,155 @@
+.form {
+    padding: 30px;
+    background-color: $white;
+    border-radius: 16px;
+    height: 100%;
+
+    &__subtitle {
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    &__item {
+        margin-bottom: 10px;
+    }
+
+    &__control {
+        display: block;
+        width: 100%;
+        height: 57px;
+        padding: 16px 20px;
+        border: 2px solid rgba(37, 35, 42, .1);
+        border-radius: 12px;
+        transition: .3s ease;
+
+        &:focus {
+            border-color: $dark;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        -webkit-appearance: none;
+    }
+
+    &__radios {
+        margin: 23px 0;
+        display: flex;
+        background: #FAFAFA;
+        border: 2px solid #F0F0F0;
+        width: 100%;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    &__radio {
+        display: block;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    &__radio-text {
+        display: block;
+        width: 100%;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.1;
+        color: #C3C3C3;
+        padding: 15.5px 15px;
+        position: relative;
+        transition: .3s ease;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            border: 2px solid transparent;
+            border-radius: 12px;
+            transition: .3s ease;
+        }
+    }
+
+    &__radio-control:checked+&__radio-text {
+        color: #6691FF;
+        background: rgba(102, 145, 255, .1);
+    }
+
+    &__radio-control:checked+&__radio-text::before {
+        border-color: #6691FF;
+    }
+
+    @media (max-width:767px) {
+        &__subtitle {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+
+
+
+.form-box {
+    padding: 38px 48px 48px;
+    background-color: $white;
+    box-shadow: 0px 30px 120px rgba(51, 51, 51, 0.15);
+    border-radius: 16px;
+    margin-bottom: 66px;
+
+    form {
+        padding: 0;
+    }
+
+    .title {
+        font-size: 32px;
+        font-weight: 500;
+        margin-top: 0;
+    }
+
+    .form__item {
+        margin-bottom: 20px;
+    }
+
+    .form__control {
+        height: 65px;
+    }
+
+    textarea.form__control {
+        min-height: 150px;
+    }
+
+    .form__btn {
+        width: auto;
+        margin-top: 10px;
+    }
+
+    @media (max-width:991px) {
+        &{
+            padding: 30px 30px;
+        }
+    }
+
+    @media (max-width:767px) {
+        &{
+            padding: 25px 15px 45px;
+            margin-bottom: 60px;
+
+            .title {
+                font-size: 22px;
+                line-height: 1.2;
+                margin-top: 0;
+            }
+
+            .form__item {
+                margin-bottom: 10px;
+            }
+
+            .form__btn {
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+    }
+}
