@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.posAbs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.main {
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+
+    h1 {
+        margin-bottom: 100px;
+
+        text-align: center;
+        font-family: "Cera Pro";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 89.9695px;
+        line-height: 110%;
+
+        text-align: center;
+        letter-spacing: -0.03em;
+
+        @media (max-width: 991px) {
+            font-size: 42px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        img[alt="Logo"] {
+            position: absolute;
+            bottom: 50px;
+        }
+    }
+
+    &.slide1::before {
+        background-image: url("img/jobs/d_screen_bg_1.png");
+
+        @media (max-width: 991px) {
+            background-image: url("img/jobs/m_screen_bg_1.png");
+        }
+    }
+
+    &.slide2::before {
+        background-image: url("img/jobs/d_screen_bg_2.png");
+
+        @media (max-width: 991px) {
+            background-image: url("img/jobs/m_screen_bg_2.png");
+        }
+    }
+
+    &.slide3::before {
+        background-image: url("img/jobs/d_screen_bg_3.png");
+
+        @media (max-width: 991px) {
+            background-image: url("img/jobs/m_screen_bg_4.png");
+        }
+    }
+
+
+    &.slide4::before {
+        background-image: url("img/jobs/d_screen_bg_4.png");
+
+        @media (max-width: 991px) {
+            background-image: url("img/jobs/m_screen_bg_3.png");
+        }
+    }
+}
+
+
+
+&::before {
+    content: "";
+    background-position: center !important;
+    background-size: cover !important;
+    z-index: -1;
+    .posAbs();
+}
