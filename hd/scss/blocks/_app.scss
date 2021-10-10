@@ -1,0 +1,94 @@
+.app {
+    position: relative;    
+
+    &__container {
+        padding-top: 43px;
+        padding-bottom: 64px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__columns {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title{
+        line-height: 1.1;
+        margin-bottom: 23px;
+        max-width: 550px;
+    }
+
+    &__lead{
+        font-size: 28px;
+        font-weight: 400;
+        max-width: 510px;
+    }
+
+    &__form{
+        max-width: 445px;
+        padding: 25px 30px 43px;
+        margin-top: -15px;
+    }
+
+    &__decor{
+        position: absolute; top: 15%; left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+    }
+
+    @media (max-width: 991px){
+        &__container {
+            padding-top: 35px;
+        }
+
+        &__columns {
+            display: block;
+            margin: 0;
+        }
+    
+        &__column {
+            max-width: 100%;
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &__title{
+            max-width: 750px;
+        }
+    
+        &__lead{
+            max-width: 610px;
+            margin-bottom: 35px;
+        }
+
+        &__form{
+            margin: 0 auto;
+            max-width: 610px;
+        }
+    }
+
+    @media (max-width:576px){
+        &__container {
+            padding-top: 25px;
+            padding-bottom: 64px;
+            position: relative;
+            z-index: 1;
+        }
+
+        &__title {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        &__lead{
+            font-size: 24px;
+        }
+
+        &__form{
+            padding: 25px 5px;
+        }
+    }
+}
